@@ -1,0 +1,34 @@
+.scroll_container {
+
+}
+
+.scroll_side {
+    top: 0;
+    bottom:0;
+    position:fixed;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    width: 100%;
+}
+
+.scroll_side::-webkit-scrollbar {
+    display: none;
+}
+
+.category {
+    height: calc(100vh / 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    font-size: 25px;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    color: grey;
+    transition: 0.2s;
+}
+
+.category.active {
+    font-weight: bold;
+    color: black;
+}
